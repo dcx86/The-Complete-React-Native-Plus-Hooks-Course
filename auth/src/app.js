@@ -4,6 +4,7 @@ import firebase from 'firebase'
 
 import { Header } from './components/common'
 import { apiKey, authDomain, databaseURL, storageBucket, messagingSenderId } from '../env'
+import LoginForm from './components/LoginForm'
 
 class App extends Component {
   componentDidMount() {
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <View>
         <Header headerText="Authentication" />
-        <Text>An app</Text>
+        <LoginForm />
       </View>
     )
   }
